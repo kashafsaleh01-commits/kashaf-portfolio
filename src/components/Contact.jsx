@@ -124,6 +124,12 @@ function Contact() {
                 value="false"
               />
 
+              <input
+                type="hidden"
+                name="_next"
+                value="https://kashaf-portfolio-tawny.vercel.app/#contact"
+              />
+
 
               {/* NAME */}
               <div
