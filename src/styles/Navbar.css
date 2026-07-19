@@ -1,0 +1,259 @@
+/* ============================================
+   NAVBAR
+============================================ */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px 0;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  padding: 14px 0;
+  background: rgba(243, 234, 223, 0.95);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 8px 25px rgba(86, 47, 43, 0.08);
+}
+
+/* ============================================
+   NAV CONTAINER
+============================================ */
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ============================================
+   LOGO
+============================================ */
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  border-radius: 14px;
+
+  background: #8b3945;
+  color: #ffffff;
+
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+
+  box-shadow: 0 8px 20px rgba(139, 57, 69, 0.2);
+
+  transition: all 0.3s ease;
+}
+
+.logo-mark:hover {
+  background: #641f2b;
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   NAVIGATION LINKS
+============================================ */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #8b3945;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #641f2b;
+}
+
+/* Active Link */
+
+.nav-link.active {
+  color: #641f2b;
+}
+
+/* Small Dot */
+
+.nav-link-dot {
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: #8b3945;
+
+  opacity: 0;
+  transform: scale(0);
+
+  transition: all 0.3s ease;
+}
+
+.nav-link.active .nav-link-dot {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ============================================
+   MOBILE MENU BUTTON
+============================================ */
+
+.nav-toggle {
+  display: none;
+
+  border: none;
+  background: transparent;
+
+  color: #8b3945;
+
+  font-size: 1.8rem;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.nav-toggle:hover {
+  color: #641f2b;
+}
+
+/* ============================================
+   RESPONSIVE
+============================================ */
+
+@media (max-width: 900px) {
+  .nav-container {
+    padding: 0 22px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-link {
+    font-size: 0.82rem;
+  }
+}
+
+/* ============================================
+   MOBILE
+============================================ */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 16px 0;
+  }
+
+  .nav-container {
+    padding: 0 20px;
+  }
+
+  .logo-mark {
+    width: 44px;
+    height: 44px;
+    font-size: 0.85rem;
+  }
+
+  .nav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-links {
+    position: absolute;
+
+    top: 75px;
+    left: 20px;
+    right: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 0;
+
+    padding: 18px;
+
+    background: #faf6f0;
+
+    border: 1px solid #dfcfc0;
+    border-radius: 18px;
+
+    box-shadow: 0 15px 35px rgba(86, 47, 43, 0.12);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+
+    transition: all 0.3s ease;
+  }
+
+  .nav-links.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-link {
+    width: 100%;
+
+    padding: 13px 10px;
+
+    color: #8b3945;
+
+    font-size: 0.95rem;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    color: #641f2b;
+  }
+
+  .nav-link-dot {
+    margin-left: auto;
+  }
+}

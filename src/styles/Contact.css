@@ -1,0 +1,426 @@
+/* ============================================
+   CONTACT SECTION
+============================================ */
+
+.contact {
+  position: relative;
+  background: #f3eadf;
+}
+
+.contact-header {
+  margin-bottom: 20px;
+}
+
+
+/* ============================================
+   CONTACT GRID
+============================================ */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 40px;
+  align-items: stretch;
+}
+
+
+/* ============================================
+   CONTACT INFO SIDE
+============================================ */
+
+.contact-info-card {
+  position: relative;
+
+  padding: 40px;
+
+  background: linear-gradient(
+    135deg,
+    #641f2b,
+    #8b3945
+  );
+
+  border-radius: var(--radius-xl);
+
+  color: #ffffff;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 30px 80px rgba(86, 47, 43, 0.25);
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  min-height: 500px;
+}
+
+
+/* ============================================
+   DECORATIVE GLOW
+============================================ */
+
+.contact-info-card::before {
+  content: '';
+
+  position: absolute;
+
+  top: -50%;
+  right: -30%;
+
+  width: 500px;
+  height: 500px;
+
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.14),
+    transparent 70%
+  );
+
+  pointer-events: none;
+}
+
+.contact-info-card::after {
+  content: '';
+
+  position: absolute;
+
+  bottom: -30%;
+  left: -20%;
+
+  width: 400px;
+  height: 400px;
+
+  background: radial-gradient(
+    circle,
+    rgba(240, 217, 213, 0.18),
+    transparent 70%
+  );
+
+  pointer-events: none;
+}
+
+
+/* ============================================
+   INFO HEADER
+============================================ */
+
+.contact-info-header h3 {
+  font-size: 1.8rem;
+  font-weight: 800;
+
+  color: #ffffff;
+
+  margin-bottom: 10px;
+}
+
+.contact-info-header p {
+  color: rgba(255, 255, 255, 0.85);
+
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+
+/* ============================================
+   INFO CONTENT
+============================================ */
+
+.contact-info-header,
+.contact-info-list {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* ============================================
+   INFO LIST
+============================================ */
+
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+
+  margin-top: 8px;
+}
+
+
+/* ============================================
+   INFO ITEM
+============================================ */
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+
+  padding: 14px 16px;
+
+  background: rgba(255, 255, 255, 0.10);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  border-radius: 14px;
+
+  color: #ffffff;
+
+  backdrop-filter: blur(10px);
+
+  transition: all 0.3s ease;
+}
+
+.contact-info-item:hover {
+  background: rgba(255, 255, 255, 0.18);
+
+  transform: translateX(6px);
+
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* ============================================
+   INFO ICON
+============================================ */
+
+.contact-info-icon {
+  width: 40px;
+  height: 40px;
+
+  background: rgba(255, 255, 255, 0.18);
+
+  border-radius: 10px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.1rem;
+
+  flex-shrink: 0;
+}
+
+
+/* ============================================
+   INFO TEXT
+============================================ */
+
+.contact-info-item span span {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.contact-info-item small {
+  font-size: 0.7rem;
+
+  opacity: 0.75;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+
+  font-weight: 600;
+}
+
+.contact-info-item strong {
+  font-size: 0.92rem;
+
+  font-weight: 600;
+}
+
+
+/* ============================================
+   DECORATIVE ORNAMENT
+============================================ */
+
+.contact-ornament {
+  position: absolute;
+
+  bottom: 30px;
+  right: 30px;
+
+  width: 80px;
+  height: 80px;
+
+  border: 2px solid rgba(255, 255, 255, 0.25);
+
+  border-radius: 20px;
+
+  transform: rotate(45deg);
+
+  z-index: 2;
+}
+
+
+/* ============================================
+   CONTACT FORM WRAPPER
+============================================ */
+
+.contact-form-wrap {
+  padding: 40px;
+
+  background: rgba(250, 246, 240, 0.88);
+
+  backdrop-filter: blur(20px);
+
+  border: 1px solid #dfcfc0;
+
+  border-radius: var(--radius-xl);
+
+  box-shadow:
+    0 20px 50px rgba(86, 47, 43, 0.08);
+}
+
+
+/* ============================================
+   CONTACT FORM
+============================================ */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+
+/* ============================================
+   FORM FIELD
+============================================ */
+
+.field {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 6px;
+}
+
+.field label {
+  font-size: 0.82rem;
+
+  font-weight: 600;
+
+  color: #6f625c;
+
+  letter-spacing: 0.02em;
+
+  transition: color 0.3s ease;
+}
+
+.field.focused label {
+  color: #8b3945;
+}
+
+
+/* ============================================
+   INPUTS
+============================================ */
+
+.field input,
+.field textarea {
+  padding: 14px 16px;
+
+  background: #ffffff;
+
+  border: 1.5px solid #eaded4;
+
+  border-radius: 14px;
+
+  font-family: inherit;
+
+  font-size: 0.95rem;
+
+  color: #641f2b;
+
+  transition: all 0.3s ease;
+
+  outline: none;
+
+  resize: vertical;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: #a99b93;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: #8b3945;
+
+  box-shadow:
+    0 0 0 4px rgba(139, 57, 69, 0.10);
+
+  background: #ffffff;
+}
+
+.field textarea {
+  min-height: 130px;
+}
+
+
+/* ============================================
+   SUBMIT BUTTON
+============================================ */
+
+.submit-btn {
+  align-self: flex-start;
+
+  margin-top: 6px;
+
+  min-width: 200px;
+
+  justify-content: center;
+}
+
+.submit-btn.success {
+  background: linear-gradient(
+    135deg,
+    #8b3945,
+    #641f2b
+  );
+
+  box-shadow:
+    0 10px 30px rgba(86, 47, 43, 0.25);
+}
+
+
+/* ============================================
+   RESPONSIVE
+============================================ */
+
+@media (max-width: 960px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .contact-info-card {
+    min-height: auto;
+
+    padding: 30px;
+  }
+
+  .contact-form-wrap {
+    padding: 30px;
+  }
+}
+
+
+@media (max-width: 520px) {
+  .contact-info-card,
+  .contact-form-wrap {
+    padding: 24px;
+  }
+
+  .contact-info-header h3 {
+    font-size: 1.5rem;
+  }
+}

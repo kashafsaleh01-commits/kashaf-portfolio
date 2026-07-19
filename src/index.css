@@ -1,0 +1,123 @@
+/* ============================================
+   GLOBAL RESET
+============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #fff9fb;
+  color: #3f3440;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ============================================
+   ROOT
+============================================ */
+
+:root {
+  --primary: #c98f9f;
+  --primary-dark: #a96f80;
+  --secondary: #f4dfe5;
+
+  --text-dark: #3f3440;
+  --text-light: #806f78;
+
+  --bg-light: #fff9fb;
+  --white: #ffffff;
+
+  --border: rgba(201, 143, 159, 0.2);
+
+  --shadow-soft: 0 10px 30px rgba(150, 100, 120, 0.1);
+
+  --gradient-hero: linear-gradient(
+    135deg,
+    #fff9fb 0%,
+    #fdf0f4 50%,
+    #f9e8ee 100%
+  );
+}
+
+/* ============================================
+   CONTAINER
+============================================ */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   SECTION
+============================================ */
+
+.section {
+  padding: 100px 0;
+}
+
+/* ============================================
+   SELECTION
+============================================ */
+
+::selection {
+  background: var(--primary);
+  color: white;
+}
+
+/* ============================================
+   SCROLLBAR
+============================================ */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff9fb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d8a7b5;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b98293;
+}
+
+/* ============================================
+   RESPONSIVE
+============================================ */
+
+@media (max-width: 768px) {
+  .section {
+    padding: 70px 0;
+  }
+
+  .container {
+    width: 92%;
+  }
+}

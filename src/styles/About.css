@@ -1,0 +1,230 @@
+/* ============================================
+   ABOUT SECTION
+============================================ */
+
+.about {
+  width: 100%;
+  background: #f3eadf;
+}
+
+/* ============================================
+   MAIN 2-COLUMN LAYOUT
+============================================ */
+
+.about-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 80px;
+  align-items: center;
+}
+
+/* ============================================
+   LEFT SIDE
+============================================ */
+
+.about-content {
+  width: 100%;
+  max-width: 650px;
+}
+
+/* ============================================
+   ABOUT LABEL
+============================================ */
+
+.about-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  color: #8b3945;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  margin-bottom: 14px;
+}
+
+/* ONLY DOT */
+
+.about-eyebrow .accent-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #8b3945;
+  margin-right: 10px;
+  box-shadow: 0 0 12px rgba(139, 57, 69, 0.35);
+}
+
+/* REMOVE LINE / SLASH */
+
+.about-eyebrow::before {
+  content: none !important;
+  display: none !important;
+}
+
+/* ============================================
+   SECTION TITLE
+============================================ */
+
+.section-title {
+  margin: 0 0 22px;
+  color: #39030c !important;
+  font-size: 3.8rem;
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* ============================================
+   ABOUT TEXT
+============================================ */
+
+.about-lead {
+  margin: 0 0 18px;
+  font-size: 1.25rem;
+  line-height: 1.65;
+  color: #641f2b;
+}
+
+.about-lead strong {
+  color: #8b3945;
+  font-weight: 800;
+}
+
+.about-paragraph {
+  margin: 0 0 32px;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #6f625c;
+}
+
+/* ============================================
+   HIGHLIGHTS
+============================================ */
+
+.about-highlights {
+  display: flex;
+  flex-direction: column;
+}
+
+.highlight-item {
+  display: flex;
+  gap: 18px;
+  padding: 16px 0;
+  border-bottom: 1px solid #dfcfc0;
+}
+
+.highlight-number {
+  flex-shrink: 0;
+  color: #8b3945;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.highlight-item h4 {
+  margin: 0 0 5px;
+  color: #641f2b;
+  font-size: 1rem;
+}
+
+.highlight-item p {
+  margin: 0;
+  color: #6f625c;
+  font-size: 0.9rem;
+}
+
+/* ============================================
+   RIGHT SIDE IMAGE
+============================================ */
+
+.about-visual {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-image-frame {
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 24px;
+  border: 1px solid #dfcfc0;
+  box-shadow: 0 12px 28px rgba(86, 47, 43, 0.12);
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.5s ease;
+}
+
+.about-image-frame:hover .about-image {
+  transform: scale(1.03);
+}
+
+/* ============================================
+   IMAGE LABEL
+============================================ */
+
+.about-image-label {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+  color: #6f625c;
+  font-size: 0.85rem;
+}
+
+/* ============================================
+   TABLET
+============================================ */
+
+@media (max-width: 960px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .about-visual {
+    order: -1;
+  }
+
+  .about-image-frame {
+    max-width: 380px;
+  }
+}
+
+/* ============================================
+   MOBILE
+============================================ */
+
+@media (max-width: 520px) {
+  .section-title {
+    font-size: 2.8rem;
+  }
+
+  .about-lead {
+    font-size: 1.1rem;
+  }
+
+  .about-image-frame {
+    max-width: 100%;
+  }
+
+  .about-image-label {
+    font-size: 0.75rem;
+  }
+
+  .about-eyebrow {
+    font-size: 0.75rem;
+  }
+}
