@@ -377,6 +377,45 @@
   min-width: 200px;
 
   justify-content: center;
+
+  background: #641f2b;
+
+  color: #ffffff;
+
+  border: none;
+
+  padding: 14px 24px;
+
+  border-radius: 12px;
+
+  font-size: 0.95rem;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #8b3945;
+
+  color: #ffffff;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 25px rgba(100, 31, 43, 0.25);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
 }
 
 .submit-btn.success {
@@ -422,5 +461,9 @@
 
   .contact-info-header h3 {
     font-size: 1.5rem;
+  }
+
+  .submit-btn {
+    width: 100%;
   }
 }
