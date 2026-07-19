@@ -42,13 +42,16 @@ function Contact() {
   return (
     <section id="contact" className="contact section">
       <div className="container">
+
         <div className="contact-header">
           <span className="section-eyebrow">
             <span className="accent-dot"></span>
             Get In Touch
           </span>
 
-          <h2 className="section-title">Let's Work Together</h2>
+          <h2 className="section-title">
+            Let's Work Together
+          </h2>
 
           <p className="section-subtitle">
             Have a project idea, opportunity, or just want to connect?
@@ -57,8 +60,10 @@ function Contact() {
         </div>
 
         <div className="contact-grid">
-          {/* Left Side */}
+
+          {/* LEFT SIDE */}
           <div className="contact-info-card">
+
             <div className="contact-info-header">
               <h3>Let's Connect</h3>
 
@@ -69,15 +74,22 @@ function Contact() {
             </div>
 
             <div className="contact-info-list">
+
               {contactInfo.map((item) => (
                 <a
                   key={item.label}
                   href={item.href}
-                  target={item.label === "Location" ? "_self" : "_blank"}
+                  target={
+                    item.label === "Location"
+                      ? "_self"
+                      : "_blank"
+                  }
                   rel="noreferrer"
                   className="contact-info-item"
                 >
-                  <span className="contact-info-icon">{item.icon}</span>
+                  <span className="contact-info-icon">
+                    {item.icon}
+                  </span>
 
                   <span>
                     <small>{item.label}</small>
@@ -85,16 +97,21 @@ function Contact() {
                   </span>
                 </a>
               ))}
+
             </div>
+
           </div>
 
-          {/* Right Side */}
+
+          {/* RIGHT SIDE */}
           <div className="contact-form-wrap">
+
             <form
               className="contact-form"
               action="https://formsubmit.co/kashafsaleh01@gmail.com"
               method="POST"
             >
+
               <input
                 type="hidden"
                 name="_subject"
@@ -107,16 +124,22 @@ function Contact() {
                 value="false"
               />
 
-              <input
-                type="hidden"
-                name="_next"
-                value="https://kashaf-portfolio-tawny.vercel.app/#contact"
-              />
 
-              <div className={`field ${focusedField === "name" ? "focused" : ""}`}>
-                <label>Your Name</label>
+              {/* NAME */}
+              <div
+                className={`field ${
+                  focusedField === "name"
+                    ? "focused"
+                    : ""
+                }`}
+              >
+
+                <label htmlFor="name">
+                  Your Name
+                </label>
 
                 <input
+                  id="name"
                   type="text"
                   name="name"
                   placeholder="Enter your name"
@@ -124,12 +147,25 @@ function Contact() {
                   onFocus={() => setFocusedField("name")}
                   onBlur={() => setFocusedField("")}
                 />
+
               </div>
 
-              <div className={`field ${focusedField === "email" ? "focused" : ""}`}>
-                <label>Email Address</label>
+
+              {/* EMAIL */}
+              <div
+                className={`field ${
+                  focusedField === "email"
+                    ? "focused"
+                    : ""
+                }`}
+              >
+
+                <label htmlFor="email">
+                  Email Address
+                </label>
 
                 <input
+                  id="email"
                   type="email"
                   name="email"
                   placeholder="your@email.com"
@@ -137,12 +173,25 @@ function Contact() {
                   onFocus={() => setFocusedField("email")}
                   onBlur={() => setFocusedField("")}
                 />
+
               </div>
 
-              <div className={`field ${focusedField === "message" ? "focused" : ""}`}>
-                <label>Your Message</label>
+
+              {/* MESSAGE */}
+              <div
+                className={`field ${
+                  focusedField === "message"
+                    ? "focused"
+                    : ""
+                }`}
+              >
+
+                <label htmlFor="message">
+                  Your Message
+                </label>
 
                 <textarea
+                  id="message"
                   name="message"
                   rows="6"
                   placeholder="Tell me about your project or opportunity..."
@@ -150,15 +199,25 @@ function Contact() {
                   onFocus={() => setFocusedField("message")}
                   onBlur={() => setFocusedField("")}
                 ></textarea>
+
               </div>
 
-              <button type="submit" className="submit-btn">
+
+              {/* SUBMIT BUTTON */}
+              <button
+                type="submit"
+                className="submit-btn"
+              >
                 <FiSend />
                 <span>Send Message</span>
               </button>
+
             </form>
+
           </div>
+
         </div>
+
       </div>
     </section>
   );
