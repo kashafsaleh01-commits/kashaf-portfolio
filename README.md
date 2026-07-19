@@ -4,7 +4,7 @@ A modern personal portfolio website built with React and Vite.
 
 ## 🚀 Live Demo
 
-[View Live Website](YOUR_VERCEL_URL_HERE)
+https://kashaf-portfolio-tawny.vercel.app/
 
 ## 📌 About the Project
 
