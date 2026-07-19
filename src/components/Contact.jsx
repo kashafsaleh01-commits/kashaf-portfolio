@@ -43,6 +43,7 @@ function Contact() {
     <section id="contact" className="contact section">
       <div className="container">
 
+        {/* SECTION HEADER */}
         <div className="contact-header">
           <span className="section-eyebrow">
             <span className="accent-dot"></span>
@@ -59,6 +60,7 @@ function Contact() {
           </p>
         </div>
 
+        {/* CONTACT GRID */}
         <div className="contact-grid">
 
           {/* LEFT SIDE */}
@@ -102,34 +104,21 @@ function Contact() {
 
           </div>
 
-
           {/* RIGHT SIDE */}
           <div className="contact-form-wrap">
 
             <form
               className="contact-form"
-              action="https://formsubmit.co/kashafsaleh01@gmail.com"
+              action="https://formspree.io/f/mjgnrblv"
               method="POST"
             >
 
+              {/* SUBJECT */}
               <input
                 type="hidden"
                 name="_subject"
                 value="New Portfolio Contact Message"
               />
-
-              <input
-                type="hidden"
-                name="_captcha"
-                value="false"
-              />
-
-              <input
-                type="hidden"
-                name="_next"
-                value="https://kashaf-portfolio-tawny.vercel.app/#contact"
-              />
-
 
               {/* NAME */}
               <div
@@ -156,7 +145,6 @@ function Contact() {
 
               </div>
 
-
               {/* EMAIL */}
               <div
                 className={`field ${
@@ -182,7 +170,6 @@ function Contact() {
 
               </div>
 
-
               {/* MESSAGE */}
               <div
                 className={`field ${
@@ -207,7 +194,6 @@ function Contact() {
                 ></textarea>
 
               </div>
-
 
               {/* SUBMIT BUTTON */}
               <button
