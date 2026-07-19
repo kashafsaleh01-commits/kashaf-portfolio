@@ -1,16 +1,93 @@
-# React + Vite
+# Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern personal portfolio website built with React and Vite.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[View Live Website](YOUR_VERCEL_URL_HERE)
 
-## React Compiler
+## 📌 About the Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This is my personal portfolio website created to showcase my skills, projects, education, certifications, and professional journey as a Computer Science student and aspiring Full Stack Developer.
 
-## Expanding the ESLint configuration
+The portfolio includes a modern design, responsive layout, interactive sections, and a music player for a more personalized user experience.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies Used
+
+* React.js
+* Vite
+* JavaScript
+* HTML5
+* CSS3
+
+## ✨ Features
+
+* Modern portfolio design
+* Responsive layout for desktop, tablet, and mobile devices
+* Hero section
+* About section
+* Skills section
+* Projects showcase
+* Education and certifications
+* Contact section
+* Interactive music player
+* Component-based React structure
+
+## 📁 Project Structure
+
+```text
+src/
+├── components/
+│   ├── Navbar.jsx
+│   ├── Hero.jsx
+│   ├── About.jsx
+│   ├── Skills.jsx
+│   ├── Projects.jsx
+│   ├── Contact.jsx
+│   ├── Footer.jsx
+│   └── MusicPlayer.jsx
+│
+├── styles/
+│   ├── App.css
+│   ├── Hero.css
+│   ├── About.css
+│   └── ...
+│
+├── App.jsx
+└── main.jsx
+```
+
+## 💻 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the development server
+
+```bash
+npm run dev
+```
+
+## 🎯 Purpose
+
+This project was developed as a responsive UI project to demonstrate component-based development using React and modern web technologies.
+
+## 👩‍💻 Author
+
+**Kashaf Narmeen**
+
+Computer Science Student | Aspiring Full Stack Developer
+
+---
+
+⭐ If you like this project, feel free to star the repository!
+
